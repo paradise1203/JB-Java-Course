@@ -1,4 +1,5 @@
 import enums.SortType;
+import exception.SortingFailedException;
 import sorting.BubbleSort;
 import sorting.LoserSort;
 import sorting.MergeSort;
@@ -21,7 +22,12 @@ public final class ArrayUtils {
             default:
                 sorting = new LoserSort<>();
         }
-        return sorting.sort(arr);
+        T[] sortedArr = sorting.sort(arr);
+        if (org.apache.commons.lang3.ArrayUtils.isSorted(sortedArr, T::compareTo)) {
+            return sortedArr;
+        } else {
+            throw new SortingFailedException(sorting.getClass().getSimpleName() + " failed");
+        }
     }
 
 }
