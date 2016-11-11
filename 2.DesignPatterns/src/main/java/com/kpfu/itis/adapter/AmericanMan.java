@@ -1,4 +1,4 @@
-package com.my.adapter;
+package com.kpfu.itis.adapter;
 
 /**
  * Created by aleksandrpliskin on 10.11.16.

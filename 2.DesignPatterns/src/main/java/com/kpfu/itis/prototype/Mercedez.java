@@ -1,4 +1,4 @@
-package com.my.prototype;
+package com.kpfu.itis.prototype;
 
 import java.util.UUID;
 
