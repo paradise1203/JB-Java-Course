@@ -1,4 +1,4 @@
-package com.my.prototype;
+package com.kpfu.itis.prototype;
 
 /**
  * Created by aleksandrpliskin on 09.11.16.

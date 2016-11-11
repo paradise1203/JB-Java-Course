@@ -1,4 +1,4 @@
-package com.my.decorator;
+package com.kpfu.itis.decorator;
 
 import java.io.FilterInputStream;
 import java.io.IOException;

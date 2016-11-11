@@ -1,12 +1,18 @@
 package com.kpfu.itis.decorator;
 
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStream;
 
-/**
- * Created by aleksandrpliskin on 11.11.16.
- */
 public class Main {
-  public static void main(String[] args) {
-    File file = new File("");
+  public static void main(String[] args) throws IOException {
+    File file = new File("lesson2.DesignPatterns/src/main/resources/file.txt");
+    InputStream is = new FileInputStream(file);
+    int c;
+    while ((c = is.read()) != -1) {
+      System.out.print((char) c);
+    }
+    System.out.println("");
   }
 }
