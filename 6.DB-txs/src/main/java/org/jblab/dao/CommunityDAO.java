@@ -47,8 +47,8 @@ public class CommunityDAO {
     public void delete(int id) {
         try {
             update("DELETE FROM news n WHERE n.community_id = ?", id);
-            update("DELETE FROM community c WHERE c.id = ?", id);
             update("DELETE FROM user_community u_c WHERE u_c.community_id = ?", id);
+            update("DELETE FROM community c WHERE c.id = ?", id);
             conn.commit();
             System.out.println("Successful transaction :)");
         } catch (SQLException e) {
