@@ -32,7 +32,7 @@
 	
 	
 ## Homework
-    1) calculator using servlets 3.0 API with JInut tests.
+    1) calculator using servlets 3.0 API with JInut tests(100% coverage).
     2) прочитать про Mockito spy
-    3) через TDD yfgbcfnm Vector2D
+    3) через TDD реализовать Vector2D
     
