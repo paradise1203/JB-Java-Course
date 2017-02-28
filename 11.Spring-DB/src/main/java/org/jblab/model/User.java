@@ -3,6 +3,7 @@ package org.jblab.model;
 import org.jblab.model.enums.Sex;
 
 import javax.persistence.*;
+import java.util.List;
 
 /**
  * @author Aidar Shaifutdinov.
@@ -24,6 +25,9 @@ public class User {
 
     @Enumerated(EnumType.STRING)
     private Sex sex;
+
+    @OneToMany(mappedBy = "author")
+    private List<Post> posts;
 
     public static String getBlankMessage() {
         return BLANK_MESSAGE;
