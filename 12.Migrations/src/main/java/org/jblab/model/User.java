@@ -9,7 +9,6 @@ import java.util.List;
  * @author Aidar Shaifutdinov.
  */
 @Entity
-//NOTE Вот эта аннотация задает имя таблицы, из-за этого не работало
 @Table(name = "users")
 public class User {
 

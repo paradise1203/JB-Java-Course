@@ -7,6 +7,7 @@ import java.util.Date;
  * @author Aidar Shaifutdinov.
  */
 @Entity
+@Table(name = "posts")
 public class Post {
 
     @Id
