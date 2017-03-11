@@ -7,10 +7,14 @@
          http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
 
     <changeSet id="bitches_1" author="GoodBoy">
-        <loadUpdateData tableName="users" primaryKey="id" file="db/bit.csv">
+        <loadUpdateData tableName="users" primaryKey="id" file="db/bitches/users.csv">
             <column name="id" type="numeric"/>
         </loadUpdateData>
-
+    </changeSet>
+    <changeSet id="bitches_2" author="DamirIlyasov">
+        <loadUpdateData tableName="posts" primaryKey="id" file="db/bitches/posts.csv">
+            <column name="id" type="numeric"/>
+        </loadUpdateData>
     </changeSet>
 
 
