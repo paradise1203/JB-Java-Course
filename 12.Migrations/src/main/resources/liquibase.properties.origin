@@ -1,4 +1,4 @@
-jdbc.driver=org.postgresql.Driver
-jdbc.url=
-jdbc.user=
-jdbc.password=
+driver=org.postgresql.Driver
+url=
+user=
+password=

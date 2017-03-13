@@ -58,7 +58,7 @@ public class PersistenceConfig implements EnvironmentAware {
         HibernateJpaVendorAdapter jpaVendorAdapter = new HibernateJpaVendorAdapter();
         jpaVendorAdapter.setDatabase(Database.POSTGRESQL);
         jpaVendorAdapter.setShowSql(true);
-        jpaVendorAdapter.setGenerateDdl(false); //set false to generate with migrations
+        jpaVendorAdapter.setGenerateDdl(false);
         jpaVendorAdapter.setDatabasePlatform(env.getProperty("hibernate.dialect"));
 
         // Entity manager factory
