@@ -1,4 +1,4 @@
-package org.jblab.util;
+package org.jblab.util.json;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -9,6 +9,27 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class VkUser {
 
+    public static final class City {
+        private int id;
+        private String title;
+
+        public int getId() {
+            return id;
+        }
+
+        public void setId(int id) {
+            this.id = id;
+        }
+
+        public String getTitle() {
+            return title;
+        }
+
+        public void setTitle(String title) {
+            this.title = title;
+        }
+    }
+
     private Long id;
 
     @JsonProperty("first_name")
@@ -17,7 +38,7 @@ public class VkUser {
     @JsonProperty("last_name")
     private String lastName;
 
-    private int city;
+    private City city;
 
     public Long getId() {
         return id;
@@ -43,11 +64,11 @@ public class VkUser {
         this.lastName = lastName;
     }
 
-    public int getCity() {
+    public City getCity() {
         return city;
     }
 
-    public void setCity(int city) {
+    public void setCity(City city) {
         this.city = city;
     }
 

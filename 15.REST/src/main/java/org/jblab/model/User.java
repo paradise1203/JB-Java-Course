@@ -13,7 +13,15 @@ public class User {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    private String email;
+    private Long socialId;
+
+    private String firstName;
+
+    private String lastName;
+
+    private String city;
+
+    private String token;
 
     public Long getId() {
         return id;
@@ -23,12 +31,43 @@ public class User {
         this.id = id;
     }
 
-    public String getEmail() {
-        return email;
+    public Long getSocialId() {
+        return socialId;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void setSocialId(Long socialId) {
+        this.socialId = socialId;
     }
 
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public String getCity() {
+        return city;
+    }
+
+    public void setCity(String city) {
+        this.city = city;
+    }
+
+    public String getToken() {
+        return token;
+    }
+
+    public void setToken(String token) {
+        this.token = token;
+    }
 }

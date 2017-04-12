@@ -31,4 +31,8 @@ public class VkOAuth implements EnvironmentAware {
         return env.getProperty("tokenUrl");
     }
 
+    public String userUrl() {
+        return env.getProperty("userUrl");
+    }
+
 }

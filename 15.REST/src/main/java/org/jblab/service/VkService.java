@@ -1,6 +1,7 @@
 package org.jblab.service;
 
-import org.jblab.util.VkUser;
+import org.jblab.util.json.Token;
+import org.jblab.util.json.VkUser;
 
 /**
  * @author Aidar Shaifutdinov.
@@ -9,6 +10,8 @@ public interface VkService {
 
     String getAuthUrl();
 
-    VkUser getUser(String code);
+    Token getToken(String code);
+
+    VkUser getUser(Token token);
 
 }

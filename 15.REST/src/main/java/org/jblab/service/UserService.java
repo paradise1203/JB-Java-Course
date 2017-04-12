@@ -1,6 +1,8 @@
 package org.jblab.service;
 
 import org.jblab.model.User;
+import org.jblab.util.json.Token;
+import org.jblab.util.json.VkUser;
 
 import java.util.List;
 
@@ -9,7 +11,7 @@ import java.util.List;
  */
 public interface UserService {
 
-    void add(User user);
+    User add(Token token, VkUser vkUser);
 
     List<User> getAll();
 
